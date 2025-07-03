@@ -1,17 +1,13 @@
 {
   "files": {
-    "main.css": "/vpn-admin/static/css/main.bd8cea4a.css",
-    "main.js": "/vpn-admin/static/js/main.c820d2cc.js",
-    "static/media/four.jpg": "/vpn-admin/static/media/four.ce9409525cd2222025fd.jpg",
-    "static/media/main-slide-03.jpg": "/vpn-admin/static/media/main-slide-03.610851bbc8426824d77d.jpg",
-    "static/media/asd.jpg": "/vpn-admin/static/media/asd.47f1dfe414489e54fddc.jpg",
-    "static/media/dddd.jpg": "/vpn-admin/static/media/dddd.154adc14127c9cca80f3.jpg",
-    "index.html": "/vpn-admin/index.html",
-    "main.bd8cea4a.css.map": "/vpn-admin/static/css/main.bd8cea4a.css.map",
-    "main.c820d2cc.js.map": "/vpn-admin/static/js/main.c820d2cc.js.map"
+    "main.css": "/Leroux.git/static/css/main.deba2348.css",
+    "main.js": "/Leroux.git/static/js/main.a99ebf5b.js",
+    "index.html": "/Leroux.git/index.html",
+    "main.deba2348.css.map": "/Leroux.git/static/css/main.deba2348.css.map",
+    "main.a99ebf5b.js.map": "/Leroux.git/static/js/main.a99ebf5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd8cea4a.css",
-    "static/js/main.c820d2cc.js"
+    "static/css/main.deba2348.css",
+    "static/js/main.a99ebf5b.js"
   ]
 }
