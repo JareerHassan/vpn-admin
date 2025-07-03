@@ -1,354 +1,171 @@
-:root {
-  --custom-gradient: linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgb(64, 224, 208) 91.1%);
-    height: 100%;
 
+.about-section {
+  display: flex;
+  height: 600px;
+  overflow: hidden;
+  flex-direction: row;
 }
 
-
-/* :root { */
-  /* background-color: #62fcaf; */
-  /* --first-color: #2563eb !important; */
-  /* --second-color: #FC00FF !important; */
-/* } */
-body , html 
-{
-  background-color: #fafafa;
- height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.bg-light
-{
-  background-color: red !important;
+.accordion-tab {
+  width: 120px;
+  color: #fff;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  transition: all 0.5s ease;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 40px;
 }
 
-.border-left-custom
-{
-  border-left: 8px solid var(--first-color);
-}
-.custom-line
-{
-  border: 1px solid var(--first-color);
-  margin: 0;
-}
-
-.bg-custom {
-  /* background-color: var(--first-color) !important; */
-  background-color: #2563eb;
-  
-  }
-.bg-gradient {
- 
-  background-color: #2563eb !important;
-background-image:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%) !important;
-
+.accordion-tab.active {
+  width: 800px;
+  writing-mode: horizontal-tb;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-top: 0;
 }
 
-.shadow-custom 
-{
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.arrow-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
 }
 
-.spaced-table {
-  border-spacing: 0 10px !important;
-  border-collapse: separate !important;
-  width: 100% !important;
+.arrow-icon {
+  font-size: 40px;
+  color:  #85979B;
+  transition: transform 0.3s;
 }
 
-
-/* Sidbar Code */
-.sidebar {
-  width: 17% !important;
-  max-width: 300px;
-  height: 100%;
+.arrow-icon.rotated {
+  transform: rotate(180deg);
 }
 
-.sidebar-header {
-  padding: 20px;
+.tab-header {
   text-align: center;
 }
 
-.sidebar-header h3 {
-  color: white;
-}
-
-.list-unstyled {
-  padding-left: 0;
-}
-
-.components li {
-  padding: 10px 0;
-
-}
-
-.components li:hover {
+.number {
+  font-size: 70px;
+  opacity: 0.1;
   font-weight: bold;
-  font-size: 18px;
-  border-radius: 10px;
-  padding-left: 8px;
-  border-left: 8px solid var(--first-color);
+  display: block;
 }
 
-.components a {
-  color: white;
-  text-decoration: none;
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  display: block;
+  color: #85979B;
 }
 
-.components a:hover {
-  color: white;
+.tab-content {
+  display: flex;
+  flex: 1;
+  padding: 50px;
+  gap: 40px;
+  animation: fadeIn 0.4s ease;
 }
 
-.sidebar.expanded {
-  width: 16.6667%;
+.text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.sidebar.collapsed {
-  width: 70px !important;
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#AFC1C5;
 }
 
-.sidebar .sidebar-header {
+.text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #85979B;
+}
+
+.image {
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.sidebar .toggle-btn {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
+.image img {
+  width: 100%;
+  height: 400px;
+  border-radius: 1px;
 }
 
-.sidebar ul {
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.sidebar ul li i {
-  font-size: 1.2rem;
-}
-
-.sidebar ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-
-/* Sidbar Code */
-
-
-main
-{
-	background-color: #fee3ae;
-}
-.home-image
-{
-	background-image: url('https://img.freepik.com/premium-photo/chinese-cuisine-plate-spicy-roast-fish_1205-10437.jpg?w=740');
-}
-.about-image
-{
-	background-image: url('https://img.freepik.com/premium-photo/portrait-shows-group-hotel-employees-posing-collectively-hotel-generate-ai_905417-5085.jpg?w=826');
-}
-.contact-image
-{
-	background-image: url('https://img.freepik.com/premium-photo/receptionist-businesswoman-hotel-front-desk_941600-10736.jpg?w=740');
-}
-.blogs-image
-{
-	background-image: url('https://thumbs.dreamstime.com/b/indian-chat-kachori-topped-curd-onions-laid-black-background-fried-sev-green-red-chillies-197274335.jpg');
-}
-.order-form-image
-{
-	background-image: url('https://img.freepik.com/free-photo/view-delicious-dumplings_23-2150777771.jpg?t=st=1694432809~exp=1694436409~hmac=3db1953124c5c02bcdf8e468ea305431b6a952c3dccb3f9f6aa7cda1d3a206fa&w=740');
-}
-.back
-{
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-}
-.bg-image
-{
-	background-attachment:fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.bg-transparent-color
-{
-	background-color:rgba(0, 0, 0, 0.6);
-}
-.bg-orange
-{
-	background-color:rgba(247,85,2,255) !important;
-}
-
-.font
-{
-	font-size:80px; font-weight: 800;
-}
-.food-card
-{
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-	width:18rem;
-	min-height: 16rem;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.my-card
-{
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-	width:22rem;
-	min-height: 16rem;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.food-card:hover {
-	transition: transform 1s;
-	transform: scale(1.1);
-	cursor: zoom-in;
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-}
-.shadoww
-{
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.my-cardblog
-{
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	width: 25rem;
-	height:14rem;
-
-}
-.my-cardblog .card-title
-{
-	font-weight: 800;
-}
-.my-cardblog a
-{
-	background-color:rgba(247,85,2,255);
-}
-.text-orange
-{
-	color: rgba(247,85,2,255) !important;
-}
-.team-card
-{
-	width: 18rem;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-}
-.team-card-admin
-{
-	width: 18rem;
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	background:linear-gradient(109.6deg, rgba(5, 85, 84, 1) 11.2%, rgba(64, 224, 208, 1) 91.1%);
-}
-.team-card-admin img
-{
-	top: 40px;
-	left: 20%;
-	height: 10.5rem;
-	width: 10.5rem;   
-	z-index: 900;
-	border: 5px solid rgba(247,85,2,255);
-}
-.team-card img
-{
-	
-	top: 40px;
-	left: 20%;
-	height: 10.5rem;
-	width: 10.5rem;   
-	z-index: 900;
-	border: 5px solid #fee3ae;
-
-}
-
-
-/* Animations Loading */
-
-
-.animated-loading
-{
-  animation: loading 2s infinite ease-in-out;
-
-}
-
-@keyframes loading{
-
-  0%, 100% {
-    background: url("./Assets/homeslider/main-slide-03.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  50% {
-    background: url("./Assets/dddd.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  70% {
-    background: url("./Assets/homeslider/asd.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-
-
-}
-
-.well-background
-{
-  background: url("./Assets/dddd.jpg");
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-@keyframes bgfround{
-
-  0%, 100% {
-    background: url("./Assets/four.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  50% {
-    background: url("./Assets/four.jpg");
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-
-}
-
-
-@keyframes fade-in {
-  0% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: scale(0.96);
+    transform: translateX(40px);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: scale(1);
-  }
-}
-.animate-fade-in {
-  animation: fade-in 0.25s ease-out;
-}
-
-/* In your index.css or tailwind.config.js if using custom plugins */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.animate-fadeInUp {
-  animation: fadeInUp 0.4s ease-out forwards;
+/* ✅ Responsive for Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .accordion-tab {
+    width: 100% !important;
+    writing-mode: horizontal-tb !important;
+    flex-direction: column !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: none;
+    padding: 20px !important;
+  }
+
+  .accordion-tab.active {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  .tab-content {
+    flex-direction: column;
+    padding: 20px !important;
+    gap: 20px;
+  }
+
+  .image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .arrow-button {
+    top: 10px;
+    right: 10px;
+    left: auto;
+  }
+
+  .text h3 {
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
 }
 
