@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/JareerHassan/Leroux.git/static/css/main.deba2348.css",
-    "main.js": "/JareerHassan/Leroux.git/static/js/main.4776063a.js",
+    "main.js": "/JareerHassan/Leroux.git/static/js/main.42863095.js",
     "index.html": "/JareerHassan/Leroux.git/index.html",
     "main.deba2348.css.map": "/JareerHassan/Leroux.git/static/css/main.deba2348.css.map",
-    "main.4776063a.js.map": "/JareerHassan/Leroux.git/static/js/main.4776063a.js.map"
+    "main.42863095.js.map": "/JareerHassan/Leroux.git/static/js/main.42863095.js.map"
   },
   "entrypoints": [
     "static/css/main.deba2348.css",
-    "static/js/main.4776063a.js"
+    "static/js/main.42863095.js"
   ]
 }
