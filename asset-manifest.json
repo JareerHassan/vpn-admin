@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Leroux/static/css/main.deba2348.css",
-    "main.js": "/Leroux/static/js/main.42863095.js",
+    "main.js": "/Leroux/static/js/main.267bb565.js",
     "index.html": "/Leroux/index.html",
     "main.deba2348.css.map": "/Leroux/static/css/main.deba2348.css.map",
-    "main.42863095.js.map": "/Leroux/static/js/main.42863095.js.map"
+    "main.267bb565.js.map": "/Leroux/static/js/main.267bb565.js.map"
   },
   "entrypoints": [
     "static/css/main.deba2348.css",
-    "static/js/main.42863095.js"
+    "static/js/main.267bb565.js"
   ]
 }
